@@ -75,7 +75,7 @@ def play(speed):
     print(f"Frame speed is {speed} frame")
     if cap.isOpened():
         cap.release()
-    cap = cv2.VideoCapture("Welcome.mp4")
+    cap = cv2.VideoCapture("cricket.mp4")
     # print(temp)
     # frame1 = temp
     frame1 = speed + frame1
