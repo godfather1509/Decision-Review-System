@@ -75,7 +75,7 @@ def play(speed):
     print(f"Frame speed is {speed} frame")
     if cap.isOpened():
         cap.release()
-    cap = cv2.VideoCapture("cricket.mp4")
+    cap = cv2.VideoCapture(r"C:\Users\ayush\OneDrive\Desktop\multi mini project\DRS\cricket.mp4")
     # print(temp)
     # frame1 = temp
     frame1 = speed + frame1
@@ -126,13 +126,13 @@ update_frame()
 btn1 = Button(window, text="<<Fast Backwards", width=50, command=partial(play, -25))
 btn1.pack()
 
-btn6 = Button(window, text="<<Backwards(1 frame)", width=50, command=partial(play, -5))
+btn6 = Button(window, text="<<Backwards(1 frame)", width=50, command=partial(play, -1))
 btn6.pack()
 
 btn2 = Button(window, text="Fast Forward >>", width=50, command=partial(play, 25))
 btn2.pack()
 
-btn7 = Button(window, text="Forward(1 frame)>>", width=50, command=partial(play, 5))
+btn7 = Button(window, text="Forward(1 frame)>>", width=50, command=partial(play, 1))
 btn7.pack()
 
 btn3 = Button(window, text="Pause", width=50, command=pause)
